@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: testZookeeperApp
+  cloud:
+    zookeeper:
+      discovery:
+        instance-port: 8080
+        instance-host: localhost
+        enabled: true
+        register: true
+      connect-string: 192.168.12.128:2181
