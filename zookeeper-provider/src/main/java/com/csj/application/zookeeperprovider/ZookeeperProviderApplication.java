@@ -12,20 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @EnableDiscoveryClient
 public class ZookeeperProviderApplication {
 
-
-    @Autowired
-    private DiscoveryClient discovery;
-
-    @Autowired(required = false)
-    private Registration registration;
-
-
-    @RequestMapping("/hi")
-    public String hi() {
-        return "Hello World! from " + this.registration;
-    }
-
-
     public static void main(String[] args) {
         SpringApplication.run(ZookeeperProviderApplication.class, args);
     }
