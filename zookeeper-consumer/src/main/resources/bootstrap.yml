@@ -1,0 +1,10 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: zkclient
+  cloud:
+    zookeeper:
+      connect-string: 192.168.12.128:2181
+      discovery:
+       register: true
